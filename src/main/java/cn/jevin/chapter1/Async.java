@@ -1,16 +1,15 @@
-package cn.jevin.n1;
+package cn.jevin.chapter1;
 
 import cn.jevin.utils.FileReader;
 import lombok.extern.slf4j.Slf4j;
 
-
 /**
- * 同步等待
+ * 异步不等待
  */
-@Slf4j(topic ="c.Sync")
-public class Sync {
+@Slf4j(topic = "c.Async")
+public class Async {
     public static void main(String[] args) {
-        FileReader.read(Constants.FILE_FULL_PATH);
+        new Thread(()-> FileReader.read(Constants.FILE_FULL_PATH)).start();
         log.debug("do other things ...");
     }
 }

@@ -1,4 +1,4 @@
-package cn.jevin.n1;
+package cn.jevin.chapter1;
 
 import lombok.extern.slf4j.Slf4j;
 

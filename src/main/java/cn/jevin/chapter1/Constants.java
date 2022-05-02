@@ -1,4 +1,4 @@
-package cn.jevin.n1;
+package cn.jevin.chapter1;
 
 public final class Constants {
 
