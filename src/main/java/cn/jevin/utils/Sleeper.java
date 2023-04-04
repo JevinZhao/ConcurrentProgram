@@ -10,7 +10,6 @@ public class Sleeper {
             e.printStackTrace();
         }
     }
-//  shdffuhsjfshcershi1
     public static void sleep(double i) {
         try {
             TimeUnit.MILLISECONDS.sleep((int) (i * 1000));
